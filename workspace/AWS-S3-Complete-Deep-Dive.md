@@ -254,7 +254,7 @@ Since DNS is a global system, the bucket name must be globally unique to resolve
 
 > **Why this works:** The `NotResource` element matches any S3 bucket ARN that does NOT start with `acme-`. Combined with `Effect: Deny`, this means any `CreateBucket` call for a bucket name not starting with `acme-` is denied. The second statement is the key one — it uses `NotResource` to enforce the naming pattern at the ARN level.
 
-**HII**
+**HIII**
 
 **Simpler, single-statement version (recommended):**
 
